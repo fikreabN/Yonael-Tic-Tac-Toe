@@ -1,0 +1,583 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: antiquewhite;
+}
+.none {
+    display: none;
+}
+h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-18%, 0%);
+    width: 400px;
+    margin-top: 60px;
+    top: 10px;
+    color: rgb(255, 0, 0);
+}
+
+.ur {
+    display: inline;
+}
+.fill {
+    display: inline;
+}
+.turn1, .turn2 {
+    color: rgb(37, 199, 37);
+}
+
+.a:hover,.b:hover,.c:hover,.d:hover,.e:hover,.f:hover,.g:hover,.h:hover,.i:hover {
+    cursor: pointer;
+}
+.x {
+    height: 25px;
+    width: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.o {
+    height: 25px;
+    width: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.ch2 {
+    margin-left: 35px;
+    margin-bottom: -5px;
+}
+.x:hover {
+    background-color: rgb(207, 207, 207);
+}
+.o:hover {
+    background-color: rgb(207, 207, 207);
+}
+.line1, .line2 {
+    width: 400px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
+}
+.line3, .line4 {
+    width: 4px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+}
+.line {
+    position: absolute;
+}
+@media(max-width: 800px){
+    .player1, .player2 {
+        border: 2px solid;
+        border-radius: 20px ;
+        width: 200px;
+        padding-left: 60px;
+    }
+    .player1 {
+        position: relative;
+        right: -15px;
+    }
+    .player2 {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+    .line1 {
+        left: 150px;
+        top: 290px;
+    }
+    .line2 {
+        left: 150px;
+        top: 420px;
+    }
+    .line3 {
+        left: 270px;
+        top: 150px;
+    }
+    .line4 {
+        left: 430px;
+        top: 150px;
+    }
+    .a {
+        top: 70px;
+        left: 170px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .b {
+        top: 70px;
+        left: 320px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .c {
+        top: 70px;
+        left: 460px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .d {
+        top: 200px;
+        left: 170px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .e {
+        top: 200px;
+        left: 320px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .f {
+        top: 200px;
+        left: 460px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .g {
+        top: 330px;
+        left: 170px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .h {
+        top: 330px;
+        left: 320px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .i {
+        top: 330px;
+        left: 460px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .win {
+        width: 5px;
+        background-color: red;
+        position: absolute;
+    }
+    .win1 {
+        height: 400px;
+        top: 150px;
+        left: 205px;
+    }
+    .win2 {
+        height: 400px;
+        top: 150px;
+        left: 355px;
+    }
+    .win3 {
+        height: 400px;
+        top: 150px;
+        left: 495px;
+    }
+    .win4 {
+        height: 400px;
+        top: 23px;
+        left: 350px;
+        transform: rotate(90deg);
+    }
+    .win5 {
+        height: 400px;
+        top: 153px;
+        left: 350px;
+        transform: rotate(90deg);
+    }
+    .win6 {
+        height: 400px;
+        top: 283px;
+        left: 350px;
+        transform: rotate(90deg);
+    }
+    .win7 {
+        height: 490px;
+        top: 120px;
+        left: 340px;
+        transform: rotate(50deg);
+    }
+    .win8 {
+        height: 490px;
+        top: 107px;
+        left: 340px;
+        transform: rotate(-50deg);
+    }
+    .re {
+        position: absolute;
+        bottom: 50px;
+        left: 310px;
+        height: 30px;
+    }
+}
+@media (max-width: 1100px) and (min-width: 800px){
+    .player1, .player2 {
+        border: 2px solid;
+        border-radius: 20px ;
+        width: 200px;
+        padding-left: 60px;
+    }
+    .player1 {
+        position: relative;
+        right: -15px;
+    }
+    .player2 {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+    .line1 {
+        left: 280px;
+        top: 290px;
+    }
+    .line2 {
+        left: 280px;
+        top: 420px;
+    }
+    .line3 {
+        left: 400px;
+        top: 150px;
+    }
+    .line4 {
+        left: 560px;
+        top: 150px;
+    }
+    .a {
+        top: 70px;
+        left: 300px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .b {
+        top: 70px;
+        left: 450px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .c {
+        top: 70px;
+        left: 590px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .d {
+        top: 200px;
+        left: 300px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .e {
+        top: 200px;
+        left: 450px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .f {
+        top: 200px;
+        left: 590px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .g {
+        top: 330px;
+        left: 300px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .h {
+        top: 330px;
+        left: 450px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .i {
+        top: 330px;
+        left: 590px;
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .win {
+        width: 5px;
+        background-color: red;
+        position: absolute;
+    }
+    .win1 {
+        height: 400px;
+        top: 150px;
+        left: calc(130px + 205px);
+    }
+    .win2 {
+        height: 400px;
+        top: 150px;
+        left: calc(130px + 355px);
+    }
+    .win3 {
+        height: 400px;
+        top: 150px;
+        left: calc(130px + 495px);
+    }
+    .win4 {
+        height: 400px;
+        top: 23px;
+        left: calc(130px + 350px);
+        transform: rotate(90deg);
+    }
+    .win5 {
+        height: 400px;
+        top: 153px;
+        left: calc(130px + 350px);
+        transform: rotate(90deg);
+    }
+    .win6 {
+        height: 400px;
+        top: 283px;
+        left: calc(130px + 350px);
+        transform: rotate(90deg);
+    }
+    .win7 {
+        height: 490px;
+        top: 120px;
+        left: calc(130px + 340px);
+        transform: rotate(50deg);
+    }
+    .win8 {
+        height: 490px;
+        top: 107px;
+        left: calc(130px + 340px);
+        transform: rotate(-50deg);
+    }
+    .re {
+        position: absolute;
+        bottom: 50px;
+        left: calc(130px + 310px);
+        height: 30px;
+    }
+}
+@media (min-width: 1100px) {
+    .player1, .player2 {
+        border: 2px solid;
+        border-radius: 20px ;
+        width: 200px;
+        padding-left: 60px;
+    }
+    .player1 {
+        position: relative;
+        right: -15px;
+    }
+    .player2 {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+    .line1 {
+        left: calc(170px + 280px);
+        top: 290px;
+    }
+    .line2 {
+        left: calc(170px + 280px);
+        top: 420px;
+    }
+    .line3 {
+        left: calc(170px + 400px);
+        top: 150px;
+    }
+    .line4 {
+        left: 730px;
+        top: 150px;
+    }
+    .a {
+        top: 70px;
+        left: calc(170px + 300px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .b {
+        top: 70px;
+        left: calc(170px + 450px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .c {
+        top: 70px;
+        left: calc(170px + 590px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .d {
+        top: 200px;
+        left: calc(170px + 300px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .e {
+        top: 200px;
+        left: calc(170px + 450px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .f {
+        top: 200px;
+        left: calc(170px + 590px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .g {
+        top: 330px;
+        left: calc(170px + 300px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .h {
+        top: 330px;
+        left: calc(170px + 450px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .i {
+        top: 330px;
+        left: calc(170px + 590px);
+        position: absolute;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .win {
+        width: 5px;
+        background-color: red;
+        position: absolute;
+    }
+    .win1 {
+        height: 400px;
+        top: 150px;
+        left: calc(300px + 205px);
+    }
+    .win2 {
+        height: 400px;
+        top: 150px;
+        left: calc(300px + 355px);
+    }
+    .win3 {
+        height: 400px;
+        top: 150px;
+        left: calc(300px + 495px);
+    }
+    .win4 {
+        height: 400px;
+        top: 23px;
+        left: calc(300px + 350px);
+        transform: rotate(90deg);
+    }
+    .win5 {
+        height: 400px;
+        top: 153px;
+        left: calc(300px + 350px);
+        transform: rotate(90deg);
+    }
+    .win6 {
+        height: 400px;
+        top: 283px;
+        left: calc(300px + 350px);
+        transform: rotate(90deg);
+    }
+    .win7 {
+        height: 490px;
+        top: 120px;
+        left: calc(300px + 340px);
+        transform: rotate(50deg);
+    }
+    .win8 {
+        height: 490px;
+        top: 107px;
+        left: calc(300px + 340px);
+        transform: rotate(-50deg);
+    }
+    .re {
+        position: absolute;
+        bottom: 50px;
+        left: calc(300px + 310px);
+        height: 30px;
+    }
+}
